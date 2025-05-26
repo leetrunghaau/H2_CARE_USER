@@ -1,0 +1,107 @@
+/* vùng nền xanh */
+.hero-wrapper {
+  background-color: #0d73db;
+  padding: 72px 0;               /* khoảng top-bottom */
+  color: #fff;
+  text-align: center;
+}
+
+/* container cố định max-width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hero-title {
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero-sub {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  line-height: 1.45;
+}
+
+/* ô Search trắng tròn góc */
+.hero-search .ant-input,
+.hero-search .ant-input-group-addon button {
+  border: none;
+  background-color: transparent;
+}
+
+.hero-search .ant-input-group {
+  border-radius: 36px !important;
+  overflow: hidden;
+}
+
+.hero-search input {
+  padding: 18px 24px;
+  font-size: 16px;
+}
+
+.hero-search .ant-btn {
+  height: 100%;
+  width: 56px;
+  color: #0d73db;
+  background-color: #fff;
+}
+
+/* Ảnh bên phải */
+.hero-img {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Ẩn ảnh dưới md */
+@media (max-width: 767.98px) {
+  .hero-img-col {
+    display: none;
+  }
+}
+
+/* Hero.css – làm ô Search nền trắng tròn góc */
+.hero-search {
+  width: 100%;
+  max-width: 700px;        /* rộng bao nhiêu tùy bạn */
+  margin: 0 auto;
+}
+
+/* ẩn viền gốc + đổ nền trắng */
+.hero-search .ant-input-group {
+  background: #fff;
+  border-radius: 36px !important;
+  overflow: hidden;
+  border: none !important;
+}
+
+/* input bên trong */
+.hero-search .ant-input {
+  background: transparent;
+  border: none;
+  padding: 18px 24px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* nút search (addon) */
+.hero-search .ant-input-group-addon .ant-btn {
+  background: transparent;
+  border: none;
+  color: #0d73db;
+  width: 56px;
+  height: 100%;
+  font-size: 20px;
+}
+
+.hero-search .ant-input::placeholder {
+  color: #888;
+}
+
+.hero-search {
+  margin-top: 20px;
+}
+

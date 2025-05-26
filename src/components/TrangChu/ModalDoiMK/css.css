@@ -1,0 +1,19 @@
+.btn-taocauhoi:hover, .btn-doitt:hover,
+.btn-taocauhoi:focus, .btn-doitt:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    filter: brightness(1.05);
+    background: linear-gradient(90deg, #ff0000 0%, #0004ff 100%) !important;
+    border-color: transparent !important;   /* chặn viền primary */
+
+}
+
+.btn-taocauhoi, .btn-doitt {
+  background: linear-gradient(90deg, #0004ff 0%, #ff0000 100%);
+  border: none;                 /* bỏ viền mặc định */
+  border-radius: 4px;           /* nhẹ nhàng, không bo tròn lớn */
+  font-weight: 600;
+  color: #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}

@@ -1,0 +1,108 @@
+/* ============ HEADER FIXED ============ */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+  background: #fff;
+  box-shadow: 0 2px 8px #f0f1f2;
+  line-height: 64px;
+  font-weight: 600;
+}
+
+/* ====== Logo ====== */
+.logo {
+  font-size: 20px;
+}
+
+/* ====== MENU NGANG DESKTOP ====== */
+.menuHeader {
+  border-bottom: none;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+}
+
+.menuHeader .ant-menu-item,
+.menuHeader .ant-menu-submenu {
+  top: 0;                /* fix lệch */
+}
+
+/* ====== NÚT ĐĂNG NHẬP ====== */
+.login-button:hover {
+  color: #fff;
+  background: #1975dc;
+}
+
+/* ============ DROPDOWN “Đặt khám” ============ */
+/* bản thân item */
+.dk-item {
+  color: #000;
+  font-weight: 600;
+}
+
+/* padding + chiều ngang menu item */
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-item-disabled {
+  padding: 14px 24px !important;   /* trên/dưới 14px, trái/phải 24px */
+  font-size: 18px;
+  width: 300px !important;
+  line-height: 22px;
+}
+
+/* hover */
+.ant-dropdown-menu-item:hover,
+.dk-item:hover {
+  background: #f1f5f9 !important;
+  color: #1975dc !important;
+}
+
+/* chữ nhỏ bên dưới dòng chính */
+.txt-nho {
+  display: block;
+  margin-top: 4px;
+  font-size: 14px;
+  color: #838282;
+  font-weight: 400;
+}
+
+/* ========= RESPONSIVE (ẩn menu, hiện nút ☰) ========= */
+@media (max-width: 768px) {
+  .menuHeader,
+  .login-button {
+    display: none;
+  }
+}
+
+/* Từ 576px trở lên: ẨN */
+@media (min-width: 576px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* Ngược lại: menu & login chỉ hiển thị ≥ 576px */
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .desktop-nav {
+    display: block;
+  }
+}
+/* Header.css – fix text bị cắt trong Drawer */
+.ant-menu-inline .ant-menu-item,
+.ant-menu-inline .ant-menu-submenu-title {
+  white-space: normal;       /* cho phép xuống dòng */
+  overflow: visible;         /* không ẩn phần tràn */
+}
+
+.ant-menu-inline .ant-menu-item {
+  height: auto;              /* tự co theo nội dung */
+  line-height: 20px;         /* thấp hơn mặc định để 2 dòng gọn đẹp */
+  padding-block: 10px;       /* top–bottom 10px */
+}

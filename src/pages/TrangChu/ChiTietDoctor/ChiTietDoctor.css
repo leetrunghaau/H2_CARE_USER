@@ -1,0 +1,47 @@
+.dat-kham-ngay:hover,
+.dat-kham-ngay:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    filter: brightness(1.05);
+    background: linear-gradient(90deg, #ff0000 0%, #0004ff 100%) !important;
+    border-color: transparent !important;   /* chặn viền primary */
+
+}
+
+.dat-kham-ngay {
+  background: linear-gradient(90deg, #0004ff 0%, #ff0000 100%);
+  border: none;                 /* bỏ viền mặc định */
+  border-radius: 4px;           /* nhẹ nhàng, không bo tròn lớn */
+  font-weight: 600;
+  color: #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.doctor-detail {
+    margin: 5px 0;
+}
+
+.lich-kham-item {
+  background: #f5f5f5;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.lich-kham-item:hover {
+  border-color: #1677FF;
+  box-shadow: 0 0 0 2px #e6f4ff;
+  background-color: #e6f7ff;
+}
+
+.lich-kham-item.active {
+  background: #1677FF;
+  color: white;
+  border-color: #1677FF;
+}
+

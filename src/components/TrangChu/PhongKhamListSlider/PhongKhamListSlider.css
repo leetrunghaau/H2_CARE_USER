@@ -1,0 +1,111 @@
+.doctor-list-container {
+  padding: 20px; /* Thêm padding cho toàn bộ section */
+}
+
+.margin-auto {
+    width: 80%;
+    margin: auto;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;  
+}
+
+.view-more-button {
+  padding: 0; /* Bỏ padding mặc định của button link */
+  font-weight: bold;
+}
+
+/* Container cho slider để thêm padding hoặc margin nếu cần */
+.slider-container {
+  margin-top: 20px;
+  padding: 0 10px; /* Thêm padding ngang để các mũi tên điều hướng không bị sát lề */
+}
+
+/* Style cho mỗi slide item */
+.doctor-slide {
+  
+}
+
+.doctor-card {
+  width: 95%; /* Card chiếm toàn bộ chiều rộng cột */
+  border-radius: 8px; /* Bo góc cho card */
+  overflow: hidden; /* Đảm bảo ảnh không tràn ra ngoài bo góc */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Thêm shadow cho card */
+}
+
+.doctor-image {
+  width: 100%; /* Ảnh chiếm toàn bộ chiều rộng của phần cover */
+  height: 180px; /* Chiều cao cố định cho ảnh, có thể điều chỉnh */
+  object-fit: cover; /* Đảm bảo ảnh được cover và không bị méo */
+}
+
+.doctor-card .ant-card-meta-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+  white-space: nowrap; /* Ngăn không cho text xuống dòng */
+  overflow: hidden; /* Ẩn phần text bị tràn */
+  text-overflow: ellipsis; /* Thêm dấu ... khi text bị tràn */
+}
+
+.doctor-card .ant-card-meta-description {
+  font-size: 14px;
+}
+
+/* Tùy chỉnh style cho các dấu chấm điều hướng của slider */
+.slick-dots li button:before {
+  font-size: 12px; /* Kích thước của dấu chấm */
+  color: #1890ff !important; /* Màu của dấu chấm */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #096dd9 !important; /* Màu của dấu chấm khi active */
+}
+
+/* Tùy chỉnh style cho các mũi tên điều hướng của slider */
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px; /* Kích thước mũi tên */
+  color: #1890ff !important; /* Màu mũi tên */
+}
+
+.slick-prev {
+  left: -25px; /* Điều chỉnh vị trí mũi tên trái */
+}
+
+.slick-next {
+  right: -25px; /* Điều chỉnh vị trí mũi tên phải */
+}
+
+/* Nút đặt lịch – vuông, phẳng, màu mới */
+.book-btn--square {
+  background: linear-gradient(90deg, #0004ff 0%, #ff0000 100%);
+  border: none;                 /* bỏ viền mặc định */
+  border-radius: 4px;           /* nhẹ nhàng, không bo tròn lớn */
+  font-weight: 600;
+  color: #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+/* Hover – nâng nhẹ & tăng sáng */
+.book-btn--square:hover,
+.book-btn--square:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    filter: brightness(1.05);
+    background: linear-gradient(90deg, #ff0000 0%, #0004ff 100%) !important;
+    border-color: transparent !important;   /* chặn viền primary */
+
+}
+
+/* Active – nhấn xuống */
+.book-btn--square:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+

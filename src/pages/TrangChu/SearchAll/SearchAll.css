@@ -1,0 +1,39 @@
+
+.search-header-sticky {
+    position: sticky;
+    z-index: 999;
+    background: #fff;
+    padding: 16px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    top: 50px; /* 👈 Đẩy xuống bằng đúng chiều cao Header */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Bo tròn cho button */
+.filter-btn {
+    border-radius: 20px;
+    background-color: #F3F4F6;
+}
+
+.filter-select .ant-select-selector {
+  border-radius: 20px !important;
+}
+
+.btn-dat-kham {
+    padding: 0 28px;
+    background: linear-gradient(90deg, #0004ff 0%, #ff0000 100%);
+    color: white;
+    border: none;
+    border-radius: 10px; 
+}
+
+.btn-dat-kham:hover,
+.btn-dat-kham:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    filter: brightness(1.05);
+    background: linear-gradient(90deg, #ff0000 0%, #0004ff 100%) !important;
+    border-color: transparent !important;   /* chặn viền primary */
+
+}

@@ -85,21 +85,21 @@ const AppHeader = () => {
         </div>
       ),
     },
-    {
-      key: "dat-kham-benh-vien",
-      label: (
-        <div
-          onClick={() => {
-            handleMenuClick("dat-kham-benh-vien");
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="dk-item">
-          Đặt khám bệnh viện
-          <br />
-          <span className="txt-nho">Đặt khám, thanh toán, nhận kết quả</span>
-        </div>
-      ),
-    },
+    // {
+    //   key: "dat-kham-benh-vien",
+    //   label: (
+    //     <div
+    //       onClick={() => {
+    //         handleMenuClick("dat-kham-benh-vien");
+    //         window.scrollTo({ top: 0, behavior: "smooth" });
+    //       }}
+    //       className="dk-item">
+    //       Đặt khám bệnh viện
+    //       <br />
+    //       <span className="txt-nho">Đặt khám, thanh toán, nhận kết quả</span>
+    //     </div>
+    //   ),
+    // },
     {
       key: "dat-kham-phong-kham",
       label: (
@@ -115,31 +115,31 @@ const AppHeader = () => {
         </div>
       ),
     },
-    {
-      key: "dat-lich-tiem-chung",
-      label: (
-        <div
-          onClick={() => {
-            handleMenuClick("dat-lich-tiem-chung");
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="dk-item">
-          Đặt khám tiêm chủng
-          <br />
-          <span className="txt-nho">Trung tâm tiêm chủng uy tín</span>
-        </div>
-      ),
-    },
-    { type: "divider" },
-    {
-      key: "ho-tro",
-      disabled: true,
-      label: (
-        <a href="#" className="dk-item">
-          Bạn cần hỗ trợ? Gọi&nbsp;0972.138.493
-        </a>
-      ),
-    },
+    // {
+    //   key: "dat-lich-tiem-chung",
+    //   label: (
+    //     <div
+    //       onClick={() => {
+    //         handleMenuClick("dat-lich-tiem-chung");
+    //         window.scrollTo({ top: 0, behavior: "smooth" });
+    //       }}
+    //       className="dk-item">
+    //       Đặt khám tiêm chủng
+    //       <br />
+    //       <span className="txt-nho">Trung tâm tiêm chủng uy tín</span>
+    //     </div>
+    //   ),
+    // },
+    // { type: "divider" },
+    // {
+    //   key: "ho-tro",
+    //   disabled: true,
+    //   label: (
+    //     <a href="#" className="dk-item">
+    //       Bạn cần hỗ trợ? Gọi&nbsp;0972.138.493
+    //     </a>
+    //   ),
+    // },
   ];
 
   /* ——— Drawer menu cho mobile ——— */
@@ -161,7 +161,7 @@ const AppHeader = () => {
         )}
       </Menu.SubMenu>
 
-      <Menu.Item key="tuvan">Tư vấn trực tuyến</Menu.Item>
+      {/* <Menu.Item key="tuvan">Tư vấn trực tuyến</Menu.Item> */}
       <Menu.Item key="timyte" onClick={() => navigate("/search")}>
         Tìm Y tế
       </Menu.Item>
@@ -241,7 +241,7 @@ const AppHeader = () => {
                   </a>
                 </Dropdown>
               </Menu.Item>
-              <Menu.Item key="tuvan">Tư vấn trực tuyến</Menu.Item>
+              {/* <Menu.Item key="tuvan">Tư vấn trực tuyến</Menu.Item> */}
               <Menu.Item key="timyte" onClick={() => navigate("/search")}>
                 Tìm Y tế
               </Menu.Item>
@@ -307,7 +307,7 @@ const AppHeader = () => {
         width={260}
         onClose={() => setOpen(false)}
         open={open}
-        bodyStyle={{ padding: 0 }}>
+        styles={{ padding: 0 }}>
         {mobileNav}
         {isAuthenticated ? (
           <div style={{ padding: "16px 24px", borderTop: "1px solid #f0f0f0" }}>
